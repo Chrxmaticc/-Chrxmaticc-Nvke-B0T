@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import re
+import os
 from discord.ext import commands
 
 intents = discord.Intents.default()
