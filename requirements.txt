@@ -3,4 +3,3 @@ discord
 pathlib
 asyncio
 path
-os
