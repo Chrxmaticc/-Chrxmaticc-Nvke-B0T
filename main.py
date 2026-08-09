@@ -9,7 +9,7 @@ intents.message_content = True
 intents.members = True
 
 bot = commands.Bot(command_prefix=",", intents=intents, help_command=None)
-token = os.getenv("DISCORD_TOKEN")
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 DEFAULT_CONFIG = {
     "channels": 500,
