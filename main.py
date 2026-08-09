@@ -14,9 +14,9 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 DEFAULT_CONFIG = {
     "channels": 500,
     "channel-name": "/chrxmaticc owns evb",
-    "pings": 30,
+    "pings": 2500,
     "server-name": "moving to /chrxmaticc",
-    "webhook-name": "disc",
+    "webhook-name": "/chrxmaticc",
     "message": "moving servers: https://discord.gg/chrxmaticc  @everyone"
 }
 
